@@ -1,0 +1,42 @@
+### Retrieve All Users
+GET http://localhost:5294/api/users
+Accept: application/json
+
+###
+
+### Retrieve a Specific User by ID
+GET http://localhost:5294/api/users/1
+Accept: application/json
+
+###
+
+### Add a New User
+POST http://localhost:5294/api/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "department": "HR"
+}
+
+###
+
+### Update an Existing User's Details
+PUT http://localhost:5294/api/users/1
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "department": "IT"
+}
+
+###
+
+### Delete a User by ID
+DELETE http://localhost:5294/api/users/1
+
+###
